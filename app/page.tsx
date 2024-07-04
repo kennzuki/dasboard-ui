@@ -1,3 +1,4 @@
+import AnalyticsChart from '@/components/dasboard/AnalyticsChart';
 import DashBoardCard from '@/components/dasboard/DashboardCard';
 import PostTable from '@/components/posts/PostsTable';
 import { Button } from '@/components/ui/button'
@@ -12,7 +13,8 @@ export default function Home() {
       <DashBoardCard title='Users' count={100} icon={<User className='text-slate-500' size={72} />}/>
       <DashBoardCard title='Commentss' count={100} icon={<MessageCircle className='text-slate-500' size={72} />}/>
       </div>
-    <PostTable title='Latest posts' limit={5}/>
+      <PostTable title='Latest posts' limit={5} />
+      <AnalyticsChart/>
    </>
   );
 }
